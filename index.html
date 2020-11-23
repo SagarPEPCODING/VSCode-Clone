@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>VS-code</title>
+        <link rel="stylesheet" href="node_modules/xterm/css/xterm.css" />
+        <link rel = "stylesheet" href = "./node_modules/jquery-ui-dist/jquery-ui.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+        <link rel = "stylesheet" href = "./index.css">
+    </head>
+    <body>
+		<h4 id="heading">Visual Studio Code</h4>
+
+        <div id = "container" class = "container">
+			
+            <div id = "top-bar" class = "top-bar">
+                <div class = "btn-container">
+                    <!-- <div class = "btn new">New</div> -->
+                    <div class = "btn" id = "saveImg">Save</div>
+                </div>
+                <div id = "tabs" class = "tabs-container">
+                    <ul></ul>
+                </div>
+            </div>
+            <div id = "main-window" class = "main-window">
+                <div id = "explorer" class = "explorer">
+                    <div id = "jstree"></div>
+                </div>
+                <div id = "explorer-terminal-window" class = "explorer-terminal-window">
+                    <div id = "editor" class = "editor"></div >
+                    <div id = "terminal" class = "terminal"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src = "./node_modules/xterm/lib/xterm.js"></script>
+    <script src = "./index.js"></script>
+</html>
